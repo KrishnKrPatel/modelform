@@ -1,0 +1,13 @@
+{% extends 'pages/base.html'%}
+
+{% block title %}
+  home
+{% endblock %}
+
+{% block content %}
+<h1>Welcome,Kaserua </h1>
+<ul>
+  <li><a href="{% url 'input'%}">insert data into databases.</a></li>
+  <li><a href="{% url 'display'%}">to show the data in data base.</a></li>
+</ul>
+{% endblock %}

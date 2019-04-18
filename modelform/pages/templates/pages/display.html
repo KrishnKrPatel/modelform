@@ -1,0 +1,22 @@
+{% extends 'pages/base.html'%}
+
+{% block title %}
+display
+{% endblock %}
+
+{% block content %}
+<table border="1">
+  <tr>
+    <th>PID</th><<th>PNAME</th><th>PCOST</th><th>PMFDT</th>
+  </tr>
+
+    {% for data in datas %}
+    <tr>
+    <td>{{ data.pid }}</td>
+    <td>{{ data.pname }}</td>
+    <td>{{ data.pcost }}</td>
+    <td>{{ data.pmfdt }}</td>
+    {% endfor %}
+  </tr>
+</table>
+{% endblock %}
